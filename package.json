@@ -1,0 +1,59 @@
+{
+  "name": "@adinax031-boop/cronpoet",
+  "version": "1.0.0",
+  "description": "Cron expressions, in plain English â parse, validate, describe and schedule 5-field cron expressions. Zero-dependency TypeScript.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "prepublishOnly": "npm run lint && npm run typecheck && npm test && npm run build"
+  },
+  "keywords": [
+    "cron",
+    "crontab",
+    "schedule",
+    "scheduler",
+    "parser",
+    "human-readable",
+    "describe",
+    "date",
+    "typescript",
+    "zero-dependencies"
+  ],
+  "author": "adinax031-boop",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adinax031-boop/Cronpoet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adinax031-boop/Cronpoet/issues"
+  },
+  "homepage": "https://github.com/adinax031-boop/Cronpoet#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@vitest/coverage-v8": "^2.1.8",
+    "eslint": "^9.17.0",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.18.1",
+    "vitest": "^2.1.8"
+  }
+}
